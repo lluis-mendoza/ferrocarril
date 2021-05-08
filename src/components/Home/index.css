@@ -1,0 +1,12 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.homeBtn{
+    padding: 30px 60px;
+    font-size: 30px;
+}
