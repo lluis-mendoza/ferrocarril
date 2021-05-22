@@ -27,7 +27,14 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3006",
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"cd backend && npx nodemon server\"",
+    "heroku-postbuild": "npm install && npm run build && cd backend && npm install",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000",
   "engines": {
     "node": "10.16.0"
   },
