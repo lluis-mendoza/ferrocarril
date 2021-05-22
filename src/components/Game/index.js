@@ -114,6 +114,9 @@ class Game extends Component {
           newPlayer[this.state.selectedId].lastActions.pop();
         }
         break;
+      case "A":
+        newPlayer[this.state.selectedId].score[newPlayer[this.state.selectedId].score.length-1] += 20;
+        newPlayer[this.state.selectedId].lastActions.push('20');
       case "comodin":
         newPlayer[this.state.selectedId].score[newPlayer[this.state.selectedId].score.length-1] += 50;
         newPlayer[this.state.selectedId].lastActions.push('50');
@@ -191,7 +194,7 @@ class Game extends Component {
               <button className="btn key btnTxt" onClick={(e) => this.handleButtonClick(e)} id="6">6</button>
               <button className="btn key"><img onClick={(e) => this.handleButtonClick(e)} id="ganador" className="cover" src="./winner.png"/></button>
 
-              <button className="btn key btnTxt" onClick={(e) => this.handleButtonClick(e)} id="1">1</button>
+              <button className="btn key btnTxt" onClick={(e) => this.handleButtonClick(e)} id="A">A</button>
               <button className="btn key btnTxt" onClick={(e) => this.handleButtonClick(e)} id="2">2</button>
               <button className="btn key btnTxt" onClick={(e) => this.handleButtonClick(e)} id="3">3</button>
               <button className="btn key btnTxt" onClick={(e) => this.handleButtonClick(e)} id="ok">ok</button>
