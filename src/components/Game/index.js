@@ -117,6 +117,7 @@ class Game extends Component {
       case "A":
         newPlayer[this.state.selectedId].score[newPlayer[this.state.selectedId].score.length-1] += 20;
         newPlayer[this.state.selectedId].lastActions.push('20');
+        break;
       case "comodin":
         newPlayer[this.state.selectedId].score[newPlayer[this.state.selectedId].score.length-1] += 50;
         newPlayer[this.state.selectedId].lastActions.push('50');
